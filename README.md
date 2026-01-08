@@ -1,4 +1,4 @@
-# Projector-camera calibration without overlapping fields of view using a planar mirror
+# Projector-camera calibration with non-overlapping fields of view using a planar mirror
 
 ## Installation
 
