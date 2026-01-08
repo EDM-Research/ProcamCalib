@@ -1,0 +1,280 @@
+#include "MirrorCalibrator.h"
+#include "Utils.h"
+#include <filesystem>
+#include <map>
+
+using namespace cv;
+
+std::vector<Point3f> MirrorCalibrator::from2dToCamSpace(std::vector<Point2f> points2d, std::vector<int>& ids)
+{
+	if (points2d.size() < 16)
+	{
+		std::cerr << "[MirrorCalibrator] Not enough points (16 required)" << std::endl;
+		ids.clear();
+		return std::vector<Point3f>();
+	}
+
+	std::vector<Point3f> objpoints;
+	for (auto id: ids)
+	{
+		objpoints.push_back(objp[id]);
+	}
+
+	Matx31d rvec, tvec;
+	bool ret = solvePnP(objpoints, points2d, camCalib.getIntrinsicsMatrix(), camCalib.getDistortionParameters(), rvec, tvec);
+
+	if (!ret)
+	{
+		std::cerr << "[MirrorCalibrator] Failed to find rvec and tvec" << std::endl;
+	}
+
+	Matx33d R;
+	Rodrigues(rvec, R);
+	Matx44d b2cam = Utils::extrinsicFromRt(R, tvec);
+
+	std::vector<Point3f> cObjp;
+	perspectiveTransform(objpoints, cObjp, b2cam);
+
+	return cObjp;
+}
+
+std::vector<Point3f> MirrorCalibrator::getPlanePointsFull(int debugDelay)
+{
+	std::vector<std::string> imgsPaths = Utils::loadImages(imgsFolder);
+	if (imgsPaths.size() != 1)
+	{
+		std::cerr << "[MirrorCalibrator] Full view mirror calibration only allows one image for calibration" << std::endl;
+		exit(1);
+	}
+
+	Mat img = imread(imgsPaths[0]);
+
+	//GaussianBlur(img, img, Size(3, 3), 1);
+
+	std::vector<Point3f> planePoints;
+	detectFull(img, planePoints, debugDelay);
+
+	return planePoints;
+}
+
+std::vector<cv::Point3f> MirrorCalibrator::getPlanePointsRV(int debugDelay)
+{
+	std::vector<Point3f> planePoints3d;
+	for (const auto& entry : Utils::loadImages(imgsFolder))
+	{
+		Mat img = imread(entry);
+		//GaussianBlur(img, img, Size(3, 3), 1);
+
+		detectRV(img, planePoints3d, debugDelay);
+	}
+
+	if (planePoints3d.size() < 3)
+	{
+		std::cerr << "[MirrorCalibrator] Not enough points found." << std::endl;
+	}
+
+	return planePoints3d;
+}
+
+std::vector<cv::Point3f> MirrorCalibrator::getPlanePointsFull(std::shared_ptr<DeviceFactory::Device> cam, int debugDelay)
+{
+	int imgId = 0;
+	std::vector<Point3f> planePoints;
+
+	while (imgId < 1)
+	{
+		Mat img; double timestamp;
+		cam->captureImages(img, timestamp);
+
+		Mat saveImg = img.clone();
+
+		std::cout << "Trying new image..\n";
+
+		bool detected = detectFull(img, planePoints, debugDelay);
+		if (detected)
+		{
+			std::stringstream ss;
+			ss << std::setfill('0') << std::setw(2) << imgId << ".png";
+			Utils::verifyDirectories(imgsFolder + "/" + ss.str());
+			imwrite(imgsFolder + "/" + ss.str(), saveImg);
+			++imgId;
+		}
+	}
+
+	return planePoints;
+}
+
+std::vector<cv::Point3f> MirrorCalibrator::getPlanePointsRV(std::shared_ptr<DeviceFactory::Device> cam, int patterns, int debugDelay)
+{
+	int imgId = 0;
+	std::vector<Point3f> planePoints3d;
+
+	while (imgId < patterns)
+	{
+		Mat img; double timestamp;
+		cam->captureImages(img, timestamp);
+
+		Mat saveImg = img.clone();
+
+		std::cout << "Trying new image..\n";
+
+		bool detected = detectRV(img, planePoints3d, debugDelay);
+		if (detected)
+		{
+			std::stringstream ss;
+			ss << std::setfill('0') << std::setw(2) << imgId << ".png";
+			Utils::verifyDirectories(imgsFolder + "/" + ss.str());
+			imwrite(imgsFolder + "/" + ss.str(), saveImg);
+			++imgId;
+			waitKey(2000);
+		}
+	}
+
+	return planePoints3d;
+}
+
+bool MirrorCalibrator::detectFull(cv::Mat img, std::vector<cv::Point3f>& planePoints, int debugDelay)
+{
+	Mat gray;
+	cvtColor(img, gray, COLOR_BGR2GRAY);
+
+	std::vector<Point2f> corners;
+	std::vector<int> ids;
+	detector.detectCharucoCorners(gray, corners, ids);
+
+	if (debugDelay >= 0)
+	{
+		drawChessboardCorners(img, detector.getBoardSize(), corners, true);
+		imshow("Img", img);
+		if (waitKey(debugDelay) == 'q')
+			exit(1);
+	}
+
+	planePoints = from2dToCamSpace(corners, ids);
+
+	return not planePoints.empty();
+}
+
+bool MirrorCalibrator::detectRV(cv::Mat img, std::vector<cv::Point3f>& planePoints, int debugDelay)
+{
+	Mat gray;
+	cvtColor(img, gray, COLOR_BGR2GRAY);
+
+	std::vector<Point2f> realPoints2d, virtualPoints2d;
+	std::vector<int> realIds, virtualIds;
+
+	detector.detectCharucoCorners(gray, realPoints2d, realIds);
+	flip(gray, gray, 1);
+	detector.detectCharucoCorners(gray, virtualPoints2d, virtualIds);
+	Utils::flip2dPoints(virtualPoints2d, gray.size().width);
+
+	if (debugDelay >= 0)
+	{
+		drawChessboardCorners(img, detector.getBoardSize(), realPoints2d, true);
+		drawChessboardCorners(img, detector.getBoardSize(), virtualPoints2d, true);
+		imshow("Img", img);
+		if (waitKey(debugDelay) == 'q')
+			exit(1);
+	}
+
+	std::vector<Point3f> realPoints3d = from2dToCamSpace(realPoints2d, realIds);
+	std::vector<Point3f> virtualPoints3d = from2dToCamSpace(virtualPoints2d, virtualIds);
+
+	std::map<int, int> realIdsMap;
+	std::map<int, int> virtualIdsMap;
+
+	for (int i = 0; i < realIds.size(); ++i)
+	{
+		realIdsMap[realIds[i]] = i;
+	}
+	for (int i = 0; i < virtualIds.size(); ++i)
+	{
+		virtualIdsMap[virtualIds[i]] = i;
+	}
+	int matches = 0;
+
+	for (auto id : virtualIdsMap)
+	{
+		// match found
+		if (realIdsMap.find(id.first) != realIdsMap.end())
+		{
+			++matches;
+			planePoints.push_back((realPoints3d[realIdsMap[id.first]] + virtualPoints3d[id.second]) / 2.0f);
+		}
+	}
+
+	if (matches > 8)
+		return true;
+	else
+		return false;
+}
+
+MirrorCalibrator::MirrorCalibrator()
+{
+}
+
+void MirrorCalibrator::init(const std::string& recording, const std::string& camCalibName)
+{
+	imgsFolder = recording;
+	this->camCalibName = camCalibName;
+
+	for (int i = 0; i < detector.getBoardSize().height; i++)
+	{
+		for (int j = 0; j < detector.getBoardSize().width; j++)
+		{
+			objp.push_back(Point3f{ (float)j * 2.22f, (float)i * 2.22f, 0.0f }); // real 1.65f
+		}
+	}
+	
+	Utils::readJSONFileToCameraCalibration(camCalibName, camCalib);
+
+	std::cout << camCalib;
+}
+
+void MirrorCalibrator::calibrate(bool debug)
+{
+
+	std::string lastFolder = std::filesystem::path(imgsFolder).filename().string();
+	std::vector<Point3f> planePoints;
+	if (lastFolder[0] == 'F')
+	{
+		std::cout << "[MirrorCalibrator]: Running full view mirror calibration" << std::endl;
+		if (debug)
+			planePoints = getPlanePointsFull(0);
+		else
+			planePoints = getPlanePointsFull();
+	}
+	else if (lastFolder[0] == 'M')
+	{
+		std::cout << "[MirrorCalibrator]: Running reflection mirror calibration" << std::endl;
+		if (debug)
+			planePoints = getPlanePointsRV(0);
+		else
+			planePoints = getPlanePointsRV();
+	}
+	destroyAllWindows();
+	mp.fromPoints(planePoints);
+}
+
+void MirrorCalibrator::calibrate(std::shared_ptr<DeviceFactory::Device> cam, int patterns)
+{
+	std::vector<Point3f> planePoints;
+	if (imgsFolder[0] == 'F')
+	{
+		planePoints = getPlanePointsFull(cam, 150);
+	}
+	else if (imgsFolder[0] == 'M')
+	{
+		planePoints = getPlanePointsRV(cam, patterns, 150);
+	}
+	destroyAllWindows();
+
+	mp.fromPoints(planePoints);
+}
+
+void MirrorCalibrator::saveToJSON()
+{
+	std::string lastFolder = std::filesystem::path(imgsFolder).filename().string();
+	std::string seqName = std::filesystem::path(camCalibName).filename().string();
+	mp.saveToJSON(Config::mirrorCalibrationFolder + seqName);
+}
