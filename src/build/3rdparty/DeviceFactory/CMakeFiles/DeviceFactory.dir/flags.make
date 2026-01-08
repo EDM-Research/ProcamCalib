@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DDeviceFactory_EXPORTS -DWITH_REALSENSE2
 
-CXX_INCLUDES = -I/home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/include/DeviceFactory -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/include/DeviceFactory -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -fPIC -std=gnu++17
 

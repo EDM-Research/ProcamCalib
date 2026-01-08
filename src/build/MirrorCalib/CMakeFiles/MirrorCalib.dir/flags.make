@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DWITH_REALSENSE2
 
-CXX_INCLUDES = -I/home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/include -I/home/jvanherck/ProcamCalib/src/MirrorCalib -I/home/jvanherck/ProcamCalib/src/MirrorCalib/../common -I/home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/include/DeviceFactory -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/include -I/home/jvanherck/test/ProcamCalib/src/MirrorCalib -I/home/jvanherck/test/ProcamCalib/src/MirrorCalib/../common -I/home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/include/DeviceFactory -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -std=gnu++17
 

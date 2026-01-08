@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jvanherck/ProcamCalib/src
+CMAKE_SOURCE_DIR = /home/jvanherck/test/ProcamCalib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jvanherck/ProcamCalib/src/build
+CMAKE_BINARY_DIR = /home/jvanherck/test/ProcamCalib/src/build
 
 # Include any dependencies generated for this target.
 include MirrorCalib/CMakeFiles/MirrorCalib.dir/depend.make
@@ -72,72 +72,72 @@ include MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o: ../MirrorCalib/MirrorCalib.cpp
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o -MF CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o.d -o CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o -c /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o -MF CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o.d -o CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.o -c /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp > CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp > CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.i
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp -o CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalib.cpp -o CMakeFiles/MirrorCalib.dir/MirrorCalib.cpp.s
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o: ../MirrorCalib/MirrorCalibrator.cpp
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o -MF CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o.d -o CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o -c /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o -MF CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o.d -o CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.o -c /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp > CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp > CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.i
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp -o CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/MirrorCalib/MirrorCalibrator.cpp -o CMakeFiles/MirrorCalib.dir/MirrorCalibrator.cpp.s
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o: ../common/CharucoDetector.cpp
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o -c /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp > CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp > CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.i
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp -o CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp -o CMakeFiles/MirrorCalib.dir/__/common/CharucoDetector.cpp.s
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o: ../common/Utils.cpp
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o -c /home/jvanherck/ProcamCalib/src/common/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/Utils.cpp > CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp > CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.i
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/Utils.cpp -o CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp -o CMakeFiles/MirrorCalib.dir/__/common/Utils.cpp.s
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/flags.make
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o: ../common/MirrorPlane.cpp
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o: MirrorCalib/CMakeFiles/MirrorCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o -c /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o -MF CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o.d -o CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp > CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp > CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.i
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp -o CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp -o CMakeFiles/MirrorCalib.dir/__/common/MirrorPlane.cpp.s
 
 # Object files for target MirrorCalib
 MirrorCalib_OBJECTS = \
@@ -173,18 +173,18 @@ MirrorCalib/MirrorCalib: /usr/local/lib/libopencv_imgcodecs.so.4.13.0
 MirrorCalib/MirrorCalib: /usr/local/lib/libopencv_imgproc.so.4.13.0
 MirrorCalib/MirrorCalib: /usr/local/lib/libopencv_core.so.4.13.0
 MirrorCalib/MirrorCalib: MirrorCalib/CMakeFiles/MirrorCalib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MirrorCalib"
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MirrorCalib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MirrorCalib"
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MirrorCalib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 MirrorCalib/CMakeFiles/MirrorCalib.dir/build: MirrorCalib/MirrorCalib
 .PHONY : MirrorCalib/CMakeFiles/MirrorCalib.dir/build
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/clean:
-	cd /home/jvanherck/ProcamCalib/src/build/MirrorCalib && $(CMAKE_COMMAND) -P CMakeFiles/MirrorCalib.dir/cmake_clean.cmake
+	cd /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib && $(CMAKE_COMMAND) -P CMakeFiles/MirrorCalib.dir/cmake_clean.cmake
 .PHONY : MirrorCalib/CMakeFiles/MirrorCalib.dir/clean
 
 MirrorCalib/CMakeFiles/MirrorCalib.dir/depend:
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/ProcamCalib/src /home/jvanherck/ProcamCalib/src/MirrorCalib /home/jvanherck/ProcamCalib/src/build /home/jvanherck/ProcamCalib/src/build/MirrorCalib /home/jvanherck/ProcamCalib/src/build/MirrorCalib/CMakeFiles/MirrorCalib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/test/ProcamCalib/src /home/jvanherck/test/ProcamCalib/src/MirrorCalib /home/jvanherck/test/ProcamCalib/src/build /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib /home/jvanherck/test/ProcamCalib/src/build/MirrorCalib/CMakeFiles/MirrorCalib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : MirrorCalib/CMakeFiles/MirrorCalib.dir/depend
 

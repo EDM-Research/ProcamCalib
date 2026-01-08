@@ -1,4 +1,4 @@
-# Install script for directory: /home/jvanherck/ProcamCalib/src
+# Install script for directory: /home/jvanherck/test/ProcamCalib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory/cmake_install.cmake")
-  include("/home/jvanherck/ProcamCalib/src/build/CamCalib/cmake_install.cmake")
-  include("/home/jvanherck/ProcamCalib/src/build/ProcamCalib/cmake_install.cmake")
-  include("/home/jvanherck/ProcamCalib/src/build/MirrorCalib/cmake_install.cmake")
+  include("/home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory/cmake_install.cmake")
+  include("/home/jvanherck/test/ProcamCalib/src/build/CamCalib/cmake_install.cmake")
+  include("/home/jvanherck/test/ProcamCalib/src/build/ProcamCalib/cmake_install.cmake")
+  include("/home/jvanherck/test/ProcamCalib/src/build/MirrorCalib/cmake_install.cmake")
 
 endif()
 
@@ -59,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jvanherck/ProcamCalib/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jvanherck/test/ProcamCalib/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

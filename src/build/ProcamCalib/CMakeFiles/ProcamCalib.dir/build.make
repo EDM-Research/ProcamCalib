@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jvanherck/ProcamCalib/src
+CMAKE_SOURCE_DIR = /home/jvanherck/test/ProcamCalib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jvanherck/ProcamCalib/src/build
+CMAKE_BINARY_DIR = /home/jvanherck/test/ProcamCalib/src/build
 
 # Include any dependencies generated for this target.
 include ProcamCalib/CMakeFiles/ProcamCalib.dir/depend.make
@@ -72,86 +72,86 @@ include ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o: ../ProcamCalib/ProcamCalib.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o -MF CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o.d -o CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o -c /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o -MF CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o.d -o CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.o -c /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp > CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp > CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp -o CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalib.cpp -o CMakeFiles/ProcamCalib.dir/ProcamCalib.cpp.s
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o: ../ProcamCalib/ProcamCalibrator.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o -MF CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o.d -o CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o -c /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o -MF CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o.d -o CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.o -c /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp > CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp > CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp -o CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/ProcamCalib/ProcamCalibrator.cpp -o CMakeFiles/ProcamCalib.dir/ProcamCalibrator.cpp.s
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o: ../ProcamCalib/Projector.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o -MF CMakeFiles/ProcamCalib.dir/Projector.cpp.o.d -o CMakeFiles/ProcamCalib.dir/Projector.cpp.o -c /home/jvanherck/ProcamCalib/src/ProcamCalib/Projector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.o -MF CMakeFiles/ProcamCalib.dir/Projector.cpp.o.d -o CMakeFiles/ProcamCalib.dir/Projector.cpp.o -c /home/jvanherck/test/ProcamCalib/src/ProcamCalib/Projector.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/Projector.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/ProcamCalib/Projector.cpp > CMakeFiles/ProcamCalib.dir/Projector.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/ProcamCalib/Projector.cpp > CMakeFiles/ProcamCalib.dir/Projector.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/Projector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/Projector.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/ProcamCalib/Projector.cpp -o CMakeFiles/ProcamCalib.dir/Projector.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/ProcamCalib/Projector.cpp -o CMakeFiles/ProcamCalib.dir/Projector.cpp.s
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o: ../common/CharucoDetector.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o -c /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp > CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp > CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/CharucoDetector.cpp -o CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/CharucoDetector.cpp -o CMakeFiles/ProcamCalib.dir/__/common/CharucoDetector.cpp.s
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o: ../common/Utils.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o -c /home/jvanherck/ProcamCalib/src/common/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/Utils.cpp > CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp > CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/Utils.cpp -o CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/Utils.cpp -o CMakeFiles/ProcamCalib.dir/__/common/Utils.cpp.s
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/flags.make
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o: ../common/MirrorPlane.cpp
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o: ProcamCalib/CMakeFiles/ProcamCalib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o -c /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o -MF CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o.d -o CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.o -c /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp > CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp > CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.i
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/common/MirrorPlane.cpp -o CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/common/MirrorPlane.cpp -o CMakeFiles/ProcamCalib.dir/__/common/MirrorPlane.cpp.s
 
 # Object files for target ProcamCalib
 ProcamCalib_OBJECTS = \
@@ -189,18 +189,18 @@ ProcamCalib/ProcamCalib: /usr/local/lib/libopencv_imgcodecs.so.4.13.0
 ProcamCalib/ProcamCalib: /usr/local/lib/libopencv_imgproc.so.4.13.0
 ProcamCalib/ProcamCalib: /usr/local/lib/libopencv_core.so.4.13.0
 ProcamCalib/ProcamCalib: ProcamCalib/CMakeFiles/ProcamCalib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ProcamCalib"
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProcamCalib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ProcamCalib"
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProcamCalib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ProcamCalib/CMakeFiles/ProcamCalib.dir/build: ProcamCalib/ProcamCalib
 .PHONY : ProcamCalib/CMakeFiles/ProcamCalib.dir/build
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/clean:
-	cd /home/jvanherck/ProcamCalib/src/build/ProcamCalib && $(CMAKE_COMMAND) -P CMakeFiles/ProcamCalib.dir/cmake_clean.cmake
+	cd /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib && $(CMAKE_COMMAND) -P CMakeFiles/ProcamCalib.dir/cmake_clean.cmake
 .PHONY : ProcamCalib/CMakeFiles/ProcamCalib.dir/clean
 
 ProcamCalib/CMakeFiles/ProcamCalib.dir/depend:
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/ProcamCalib/src /home/jvanherck/ProcamCalib/src/ProcamCalib /home/jvanherck/ProcamCalib/src/build /home/jvanherck/ProcamCalib/src/build/ProcamCalib /home/jvanherck/ProcamCalib/src/build/ProcamCalib/CMakeFiles/ProcamCalib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/test/ProcamCalib/src /home/jvanherck/test/ProcamCalib/src/ProcamCalib /home/jvanherck/test/ProcamCalib/src/build /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib /home/jvanherck/test/ProcamCalib/src/build/ProcamCalib/CMakeFiles/ProcamCalib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ProcamCalib/CMakeFiles/ProcamCalib.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jvanherck/ProcamCalib/src/CamCalib
+# Install script for directory: /home/jvanherck/test/ProcamCalib/src/CamCalib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CamCalib"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jvanherck/ProcamCalib/src/build/CamCalib/CamCalib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/jvanherck/test/ProcamCalib/src/build/CamCalib/CamCalib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CamCalib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CamCalib")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CamCalib"
-         OLD_RPATH "/home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory:/usr/local/lib:"
+         OLD_RPATH "/home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CamCalib")

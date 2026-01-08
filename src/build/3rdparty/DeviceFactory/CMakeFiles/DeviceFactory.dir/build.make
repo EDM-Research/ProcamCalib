@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jvanherck/ProcamCalib/src
+CMAKE_SOURCE_DIR = /home/jvanherck/test/ProcamCalib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jvanherck/ProcamCalib/src/build
+CMAKE_BINARY_DIR = /home/jvanherck/test/ProcamCalib/src/build
 
 # Include any dependencies generated for this target.
 include 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/depend.make
@@ -72,86 +72,86 @@ include 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o: ../3rdparty/DeviceFactory/src/Device.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/Device.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/Device.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/Device.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/Device.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/Device.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp > CMakeFiles/DeviceFactory.dir/src/Device.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp > CMakeFiles/DeviceFactory.dir/src/Device.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/Device.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp -o CMakeFiles/DeviceFactory.dir/src/Device.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/Device.cpp -o CMakeFiles/DeviceFactory.dir/src/Device.cpp.s
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o: ../3rdparty/DeviceFactory/src/DeviceFactory.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp > CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp > CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp -o CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/DeviceFactory.cpp -o CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o: ../3rdparty/DeviceFactory/src/CameraCalibration.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp > CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp > CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp -o CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CameraCalibration.cpp -o CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o: ../3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp > CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp > CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp -o CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVVideoCaptureDevice.cpp -o CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o: ../3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp > CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp > CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp -o CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/CVImageCaptureDevice.cpp -o CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/flags.make
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o: ../3rdparty/DeviceFactory/src/RealSense2Device.cpp
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o -c /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o -MF CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o.d -o CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o -c /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp > CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp > CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp -o CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory/src/RealSense2Device.cpp -o CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s
 
 # Object files for target DeviceFactory
 DeviceFactory_OBJECTS = \
@@ -188,18 +188,18 @@ DeviceFactory_EXTERNAL_OBJECTS =
 3rdparty/DeviceFactory/libDeviceFactory.so: /usr/local/lib/libopencv_imgproc.so.4.13.0
 3rdparty/DeviceFactory/libDeviceFactory.so: /usr/local/lib/libopencv_core.so.4.13.0
 3rdparty/DeviceFactory/libDeviceFactory.so: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libDeviceFactory.so"
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DeviceFactory.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jvanherck/test/ProcamCalib/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libDeviceFactory.so"
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DeviceFactory.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build: 3rdparty/DeviceFactory/libDeviceFactory.so
 .PHONY : 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/clean:
-	cd /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory && $(CMAKE_COMMAND) -P CMakeFiles/DeviceFactory.dir/cmake_clean.cmake
+	cd /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory && $(CMAKE_COMMAND) -P CMakeFiles/DeviceFactory.dir/cmake_clean.cmake
 .PHONY : 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/clean
 
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/depend:
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/ProcamCalib/src /home/jvanherck/ProcamCalib/src/3rdparty/DeviceFactory /home/jvanherck/ProcamCalib/src/build /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jvanherck/test/ProcamCalib/src /home/jvanherck/test/ProcamCalib/src/3rdparty/DeviceFactory /home/jvanherck/test/ProcamCalib/src/build /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/depend
 

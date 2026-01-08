@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jvanherck/ProcamCalib/src
+CMAKE_SOURCE_DIR = /home/jvanherck/test/ProcamCalib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jvanherck/ProcamCalib/src/build
+CMAKE_BINARY_DIR = /home/jvanherck/test/ProcamCalib/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jvanherck/ProcamCalib/src/build/CMakeFiles /home/jvanherck/ProcamCalib/src/build/3rdparty/DeviceFactory//CMakeFiles/progress.marks
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jvanherck/ProcamCalib/src/build/CMakeFiles 0
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jvanherck/test/ProcamCalib/src/build/CMakeFiles /home/jvanherck/test/ProcamCalib/src/build/3rdparty/DeviceFactory//CMakeFiles/progress.marks
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jvanherck/test/ProcamCalib/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/clean
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/preinstall
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/preinstall
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/rule:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/rule
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/rule
 .PHONY : 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ DeviceFactory: 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/rule
 
 # fast build rule for target.
 DeviceFactory/fast:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build
 .PHONY : DeviceFactory/fast
 
 src/CVImageCaptureDevice.o: src/CVImageCaptureDevice.cpp.o
@@ -180,7 +180,7 @@ src/CVImageCaptureDevice.o: src/CVImageCaptureDevice.cpp.o
 
 # target to build an object file
 src/CVImageCaptureDevice.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.o
 .PHONY : src/CVImageCaptureDevice.cpp.o
 
 src/CVImageCaptureDevice.i: src/CVImageCaptureDevice.cpp.i
@@ -188,7 +188,7 @@ src/CVImageCaptureDevice.i: src/CVImageCaptureDevice.cpp.i
 
 # target to preprocess a source file
 src/CVImageCaptureDevice.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.i
 .PHONY : src/CVImageCaptureDevice.cpp.i
 
 src/CVImageCaptureDevice.s: src/CVImageCaptureDevice.cpp.s
@@ -196,7 +196,7 @@ src/CVImageCaptureDevice.s: src/CVImageCaptureDevice.cpp.s
 
 # target to generate assembly for a file
 src/CVImageCaptureDevice.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVImageCaptureDevice.cpp.s
 .PHONY : src/CVImageCaptureDevice.cpp.s
 
 src/CVVideoCaptureDevice.o: src/CVVideoCaptureDevice.cpp.o
@@ -204,7 +204,7 @@ src/CVVideoCaptureDevice.o: src/CVVideoCaptureDevice.cpp.o
 
 # target to build an object file
 src/CVVideoCaptureDevice.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.o
 .PHONY : src/CVVideoCaptureDevice.cpp.o
 
 src/CVVideoCaptureDevice.i: src/CVVideoCaptureDevice.cpp.i
@@ -212,7 +212,7 @@ src/CVVideoCaptureDevice.i: src/CVVideoCaptureDevice.cpp.i
 
 # target to preprocess a source file
 src/CVVideoCaptureDevice.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.i
 .PHONY : src/CVVideoCaptureDevice.cpp.i
 
 src/CVVideoCaptureDevice.s: src/CVVideoCaptureDevice.cpp.s
@@ -220,7 +220,7 @@ src/CVVideoCaptureDevice.s: src/CVVideoCaptureDevice.cpp.s
 
 # target to generate assembly for a file
 src/CVVideoCaptureDevice.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CVVideoCaptureDevice.cpp.s
 .PHONY : src/CVVideoCaptureDevice.cpp.s
 
 src/CameraCalibration.o: src/CameraCalibration.cpp.o
@@ -228,7 +228,7 @@ src/CameraCalibration.o: src/CameraCalibration.cpp.o
 
 # target to build an object file
 src/CameraCalibration.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.o
 .PHONY : src/CameraCalibration.cpp.o
 
 src/CameraCalibration.i: src/CameraCalibration.cpp.i
@@ -236,7 +236,7 @@ src/CameraCalibration.i: src/CameraCalibration.cpp.i
 
 # target to preprocess a source file
 src/CameraCalibration.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.i
 .PHONY : src/CameraCalibration.cpp.i
 
 src/CameraCalibration.s: src/CameraCalibration.cpp.s
@@ -244,7 +244,7 @@ src/CameraCalibration.s: src/CameraCalibration.cpp.s
 
 # target to generate assembly for a file
 src/CameraCalibration.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/CameraCalibration.cpp.s
 .PHONY : src/CameraCalibration.cpp.s
 
 src/Device.o: src/Device.cpp.o
@@ -252,7 +252,7 @@ src/Device.o: src/Device.cpp.o
 
 # target to build an object file
 src/Device.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.o
 .PHONY : src/Device.cpp.o
 
 src/Device.i: src/Device.cpp.i
@@ -260,7 +260,7 @@ src/Device.i: src/Device.cpp.i
 
 # target to preprocess a source file
 src/Device.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.i
 .PHONY : src/Device.cpp.i
 
 src/Device.s: src/Device.cpp.s
@@ -268,7 +268,7 @@ src/Device.s: src/Device.cpp.s
 
 # target to generate assembly for a file
 src/Device.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/Device.cpp.s
 .PHONY : src/Device.cpp.s
 
 src/DeviceFactory.o: src/DeviceFactory.cpp.o
@@ -276,7 +276,7 @@ src/DeviceFactory.o: src/DeviceFactory.cpp.o
 
 # target to build an object file
 src/DeviceFactory.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.o
 .PHONY : src/DeviceFactory.cpp.o
 
 src/DeviceFactory.i: src/DeviceFactory.cpp.i
@@ -284,7 +284,7 @@ src/DeviceFactory.i: src/DeviceFactory.cpp.i
 
 # target to preprocess a source file
 src/DeviceFactory.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.i
 .PHONY : src/DeviceFactory.cpp.i
 
 src/DeviceFactory.s: src/DeviceFactory.cpp.s
@@ -292,7 +292,7 @@ src/DeviceFactory.s: src/DeviceFactory.cpp.s
 
 # target to generate assembly for a file
 src/DeviceFactory.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/DeviceFactory.cpp.s
 .PHONY : src/DeviceFactory.cpp.s
 
 src/RealSense2Device.o: src/RealSense2Device.cpp.o
@@ -300,7 +300,7 @@ src/RealSense2Device.o: src/RealSense2Device.cpp.o
 
 # target to build an object file
 src/RealSense2Device.cpp.o:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.o
 .PHONY : src/RealSense2Device.cpp.o
 
 src/RealSense2Device.i: src/RealSense2Device.cpp.i
@@ -308,7 +308,7 @@ src/RealSense2Device.i: src/RealSense2Device.cpp.i
 
 # target to preprocess a source file
 src/RealSense2Device.cpp.i:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.i
 .PHONY : src/RealSense2Device.cpp.i
 
 src/RealSense2Device.s: src/RealSense2Device.cpp.s
@@ -316,7 +316,7 @@ src/RealSense2Device.s: src/RealSense2Device.cpp.s
 
 # target to generate assembly for a file
 src/RealSense2Device.cpp.s:
-	cd /home/jvanherck/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(MAKE) $(MAKESILENT) -f 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/build.make 3rdparty/DeviceFactory/CMakeFiles/DeviceFactory.dir/src/RealSense2Device.cpp.s
 .PHONY : src/RealSense2Device.cpp.s
 
 # Help Target
@@ -361,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jvanherck/ProcamCalib/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jvanherck/test/ProcamCalib/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
