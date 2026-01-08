@@ -1,5 +1,7 @@
 # Projector-camera calibration with non-overlapping fields of view using a planar mirror
 
+Implementation of the Springer Virtual Reality journal publication **Projector-camera calibration with non-overlapping fields of view using a planar mirror**: [doi:10.1007/s10055-024-01089-7](https://doi.org/10.1007/s10055-024-01089-7)
+
 ## Installation
 
 ```
