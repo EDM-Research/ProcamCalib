@@ -43,8 +43,6 @@ This will use the saved recordings to calibrate the camera, the mirror and the p
 ## About
 ![](/DFL_FM.jpg)
 
+Developped by [Hasselt University](https://www.uhasselt.be/), [Digital Future Lab](https://www.uhasselt.be/en/instituten-en/digitalfuturelab) in the scope of the Flanders Make funded project ALARMM SBO, FWO and funds on behalf of Hasselt University.
 
-LASAA is a development by [Hasselt University](https://www.uhasselt.be/), [Digital Future Lab](https://www.uhasselt.be/en/instituten-en/digitalfuturelab) in the scope of the Flanders Make funded project ALARMM SBO, FWO and funds on behalf of Hasselt University.
 
-## License
-This is an open-source development by Hasselt University Digital Future Lab  
