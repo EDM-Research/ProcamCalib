@@ -8,7 +8,7 @@ Tested on Ubuntu 22.04 LTS, with a Realsense D455f camera and a Kodak LUMA 450 p
 
 ### Prerequisites
 
-- OpenCV (tested with 4.13.0)
+- [OpenCV](https://docs.opencv.org/4.13.0/d7/d9f/tutorial_linux_install.html) (tested with 4.13.0)
 
 
 ```
