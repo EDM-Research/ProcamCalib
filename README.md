@@ -4,6 +4,13 @@ Implementation of the Springer Virtual Reality journal publication **Projector-c
 
 ## Installation
 
+Tested on Ubuntu 22.04 LTS, with a Realsense D455f camera and a Kodak LUMA 450 projector.
+
+### Prerequisites
+
+- OpenCV (tested with 4.13.0)
+
+
 ```
 git clone https://github.com/EDM-Research/ProcamCalib.git
 cd ProcamCalib/src
