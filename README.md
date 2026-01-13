@@ -10,6 +10,7 @@ The current project supports only a single projector and camera.
 ### Prerequisites
 
 - [OpenCV with contrib installation](https://docs.opencv.org/4.13.0/d7/d9f/tutorial_linux_install.html) (tested with 4.13.0, installed)
+> If OpenCV is not installed globally, you can add `-DOpenCV_DIR="<path_to_opencv_build_dir>` to the cmake command below. You also need to add the library folder to your library path in `.bashrc`: `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_lib_dir>`
 
 ```
 git clone https://github.com/EDM-Research/ProcamCalib.git
