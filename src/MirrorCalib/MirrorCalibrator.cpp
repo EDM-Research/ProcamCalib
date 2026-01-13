@@ -28,7 +28,7 @@ std::vector<Point3f> MirrorCalibrator::from2dToCamSpace(std::vector<Point2f> poi
 	// detector.getMatchingPoints(points2d, ids, objpoints, imgpoints);
 
 	Matx31d rvec, tvec;
-	bool ret = solvePnP(objpoints, imgpoints, camCalib.getIntrinsicsMatrix(), camCalib.getDistortionParameters(), rvec, tvec);
+	bool ret = solvePnP(objpoints, pionts2d, camCalib.getIntrinsicsMatrix(), camCalib.getDistortionParameters(), rvec, tvec);
 
 	if (!ret)
 	{
