@@ -250,7 +250,7 @@ void MirrorCalibrator::init(const std::string& recording, const std::string& cam
 	{
 		for (int j = 0; j < detector.getBoardSize().width; j++)
 		{
-			objp.push_back(Point3f{ (float)j * 1.65f, (float)i * 1.65f, 0.0f }); // real 1.65f fake 2.22f
+			objp.push_back(Point3f{ (float)j * 2.22f, (float)i * 2.22f, 0.0f }); // real 1.65f fake 2.22f
 		}
 	}
 	
