@@ -3,6 +3,7 @@
 Implementation of the Springer Virtual Reality journal publication **Projector-camera calibration with non-overlapping fields of view using a planar mirror**: [doi:10.1007/s10055-024-01089-7](https://doi.org/10.1007/s10055-024-01089-7)
 
 Tested on Ubuntu 22.04 LTS, with a Realsense D455f camera and a Kodak LUMA 450 projector. We used a first-surface mirror, since this implies there is no need to take refraction indices into account. 
+The current project supports only a single projector and camera. 
 
 ## Installation
 
