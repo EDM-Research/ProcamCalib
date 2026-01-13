@@ -3,8 +3,8 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("calibrate.py", "Calibrate a full system: camera calibration, mirror calibration and procam calibration")
-    parser.add_argument("recording", required=True, type=str, help="Path to the recording folder (will save calibration images here, or read them from here). The folder name should start with 'S' for a mirrored setup.")
-    parser.add_argument("patterns", required=True, type=str, help="Path to the patterns folder to use for the procam calibration (patterns that are projected, or were projected on the calibration board)")
+    parser.add_argument("recording", type=str, help="Path to the recording folder (will save calibration images here, or read them from here). The folder name should start with 'S' for a mirrored setup.")
+    parser.add_argument("patterns", type=str, help="Path to the patterns folder to use for the procam calibration (patterns that are projected, or were projected on the calibration board)")
     parser.add_argument("-m", "--mirrorRecording", type=str, help="Path to the recording folder for mirror calibration (will save calibration images here, or read them from here). Only needed for mirrored setups (recording folder name starts with 'S'). The folder name should start with 'F' for full view and with 'M' for Real-Virtual observations.")
     parser.add_argument("-d", "--debug", action="store_true", help="Enable debug mode (shows images during calibration)")
     
