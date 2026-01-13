@@ -29,6 +29,9 @@ private:
 	bool detectFull(cv::Mat img, std::vector<cv::Point3f>& planePoints, int debugDelay = -1);
 	bool detectRV(cv::Mat img, std::vector<cv::Point3f>& planePoints, int debugDelay = -1);
 
+	std::vector<cv::Point3f> computeMidPoints(const std::vector<cv::Point3f>& realPoints3d, const std::vector<int>& realIds, 
+		const std::vector<cv::Point3f>& virtualPoints3d, const std::vector<int>& virtualIds);
+
 public:
 	MirrorCalibrator();
 

@@ -2,6 +2,10 @@
 #include "Utils.h"
 #include <filesystem>
 #include <map>
+#include <opencv2/core.hpp>
+#include <vector>
+#include <fstream>
+#include <string>
 
 using namespace cv;
 
@@ -20,8 +24,11 @@ std::vector<Point3f> MirrorCalibrator::from2dToCamSpace(std::vector<Point2f> poi
 		objpoints.push_back(objp[id]);
 	}
 
+	// std::vector<Point3f> objpoints; std::vector<Point2f> imgpoints;
+	// detector.getMatchingPoints(points2d, ids, objpoints, imgpoints);
+
 	Matx31d rvec, tvec;
-	bool ret = solvePnP(objpoints, points2d, camCalib.getIntrinsicsMatrix(), camCalib.getDistortionParameters(), rvec, tvec);
+	bool ret = solvePnP(objpoints, imgpoints, camCalib.getIntrinsicsMatrix(), camCalib.getDistortionParameters(), rvec, tvec);
 
 	if (!ret)
 	{
@@ -30,11 +37,10 @@ std::vector<Point3f> MirrorCalibrator::from2dToCamSpace(std::vector<Point2f> poi
 
 	Matx33d R;
 	Rodrigues(rvec, R);
-	Matx44d b2cam = Utils::extrinsicFromRt(R, tvec);
+	cv::Matx44d b2cam = Utils::extrinsicFromRt(R, tvec);
 
-	std::vector<Point3f> cObjp;
+	std::vector<cv::Point3f> cObjp;
 	perspectiveTransform(objpoints, cObjp, b2cam);
-
 	return cObjp;
 }
 
@@ -60,12 +66,16 @@ std::vector<Point3f> MirrorCalibrator::getPlanePointsFull(int debugDelay)
 std::vector<cv::Point3f> MirrorCalibrator::getPlanePointsRV(int debugDelay)
 {
 	std::vector<Point3f> planePoints3d;
+	int i = 0;
 	for (const auto& entry : Utils::loadImages(imgsFolder))
 	{
 		Mat img = imread(entry);
 		//GaussianBlur(img, img, Size(3, 3), 1);
 
 		detectRV(img, planePoints3d, debugDelay);
+
+		++i;
+
 	}
 
 	if (planePoints3d.size() < 3)
@@ -144,7 +154,7 @@ bool MirrorCalibrator::detectFull(cv::Mat img, std::vector<cv::Point3f>& planePo
 
 	if (debugDelay >= 0)
 	{
-		drawChessboardCorners(img, detector.getBoardSize(), corners, true);
+		cv::aruco::drawDetectedCornersCharuco(img, corners, ids, cv::Scalar(0, 255, 0));
 		imshow("Img", img);
 		if (waitKey(debugDelay) == 'q')
 			exit(1);
@@ -170,8 +180,8 @@ bool MirrorCalibrator::detectRV(cv::Mat img, std::vector<cv::Point3f>& planePoin
 
 	if (debugDelay >= 0)
 	{
-		drawChessboardCorners(img, detector.getBoardSize(), realPoints2d, true);
-		drawChessboardCorners(img, detector.getBoardSize(), virtualPoints2d, true);
+		cv::aruco::drawDetectedCornersCharuco(img, realPoints2d, realIds, cv::Scalar(0, 255, 0));
+		cv::aruco::drawDetectedCornersCharuco(img, virtualPoints2d, virtualIds, cv::Scalar(0, 255, 0));
 		imshow("Img", img);
 		if (waitKey(debugDelay) == 'q')
 			exit(1);
@@ -180,34 +190,52 @@ bool MirrorCalibrator::detectRV(cv::Mat img, std::vector<cv::Point3f>& planePoin
 	std::vector<Point3f> realPoints3d = from2dToCamSpace(realPoints2d, realIds);
 	std::vector<Point3f> virtualPoints3d = from2dToCamSpace(virtualPoints2d, virtualIds);
 
-	std::map<int, int> realIdsMap;
-	std::map<int, int> virtualIdsMap;
+	std::vector<Point3f> midPoints3d = computeMidPoints(realPoints3d, realIds, virtualPoints3d, virtualIds);
+	
+	if (midPoints3d.size() > 8)
+	{
+		planePoints.insert(planePoints.end(), midPoints3d.begin(), midPoints3d.end());
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 
-	for (int i = 0; i < realIds.size(); ++i)
+std::vector<cv::Point3f> MirrorCalibrator::computeMidPoints(const std::vector<cv::Point3f>& realPoints3d, const std::vector<int>& realIds, 
+		const std::vector<cv::Point3f>& virtualPoints3d, const std::vector<int>& virtualIds)
+{
+	std::vector<Point3f> midPoints3d;
+	std::map<int, Point3f> virtualPointsMap;
+	for (size_t i = 0; i < virtualIds.size(); ++i)
 	{
-		realIdsMap[realIds[i]] = i;
+		virtualPointsMap[virtualIds[i]] = virtualPoints3d[i];
 	}
-	for (int i = 0; i < virtualIds.size(); ++i)
-	{
-		virtualIdsMap[virtualIds[i]] = i;
-	}
+
 	int matches = 0;
-
-	for (auto id : virtualIdsMap)
+	for (size_t i = 0; i < realIds.size(); ++i)
 	{
-		// match found
-		if (realIdsMap.find(id.first) != realIdsMap.end())
+		int id = realIds[i];
+		if (virtualPointsMap.find(id) != virtualPointsMap.end())
 		{
+			Point3f realP = realPoints3d[i];
+			Point3f virtualP = virtualPointsMap[id];
+			Point3f midP{
+				(realP.x + virtualP.x) / 2.0f,
+				(realP.y + virtualP.y) / 2.0f,
+				(realP.z + virtualP.z) / 2.0f
+			};
+			midPoints3d.push_back(midP);
 			++matches;
-			planePoints.push_back((realPoints3d[realIdsMap[id.first]] + virtualPoints3d[id.second]) / 2.0f);
 		}
 	}
 
-	if (matches > 8)
-		return true;
-	else
-		return false;
+	std::cout << "[MirrorCalibrator] Found " << matches << " matching points." << std::endl;
+
+	return midPoints3d;
 }
+
 
 MirrorCalibrator::MirrorCalibrator()
 {
@@ -222,7 +250,7 @@ void MirrorCalibrator::init(const std::string& recording, const std::string& cam
 	{
 		for (int j = 0; j < detector.getBoardSize().width; j++)
 		{
-			objp.push_back(Point3f{ (float)j * 2.22f, (float)i * 2.22f, 0.0f }); // real 1.65f
+			objp.push_back(Point3f{ (float)j * 1.65f, (float)i * 1.65f, 0.0f }); // real 1.65f fake 2.22f
 		}
 	}
 	
@@ -230,6 +258,8 @@ void MirrorCalibrator::init(const std::string& recording, const std::string& cam
 
 	std::cout << camCalib;
 }
+
+
 
 void MirrorCalibrator::calibrate(bool debug)
 {
@@ -252,6 +282,7 @@ void MirrorCalibrator::calibrate(bool debug)
 		else
 			planePoints = getPlanePointsRV();
 	}
+
 	destroyAllWindows();
 	mp.fromPoints(planePoints);
 }
