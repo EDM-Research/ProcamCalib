@@ -9,10 +9,10 @@ The current project supports only a single projector and camera.
 
 ### Prerequisites
 
-- [OpenCV with contrib installation](https://docs.opencv.org/4.13.0/d7/d9f/tutorial_linux_install.html) (tested with 4.13.0, installed)
+- [OpenCV with contrib installation](https://docs.opencv.org/4.13.0/d7/d9f/tutorial_linux_install.html) (tested with 4.11.0, installed)
 > If OpenCV is not installed globally, you can add `-DOpenCV_DIR="<path_to_opencv_build_dir>"` to the cmake command below. You also need to add the library folder to your library path in `.bashrc`: `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_lib_dir>`
 
-```
+```bash
 git clone https://github.com/EDM-Research/ProcamCalib.git
 cd ProcamCalib/src
 mkdir build
@@ -24,11 +24,21 @@ sudo make install
 ## Usage
 
 In `ProcamCalib/` run:
-```
+```bash
 python calibrate.py ./data/recordings/recording/S0_0 ./data/patterns/Asym_4_9 -m ./data/recordings/mirrorRecording/M_14_0
 ```
 
 This will use the saved recordings to calibrate the camera, the mirror and the projector and saves the results under `./data/estimation`
+
+## Docker installation
+
+To run the application with docker use the following two commands:
+```bash
+docker build -t procamcalib:latest .
+```
+```bash
+docker run --rm -v ./data:/workspace/data procamcalib:latest   ./data/recordings/recording/S0_0   ./data/patterns/Asym_4_9   -m ./data/recordings/mirrorRecording/M_14_0
+```
 
 ## Citation
 ```

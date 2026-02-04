@@ -142,7 +142,7 @@ void ProcamCalibrator::calibrateInternal(bool mirrored, const Size& projSize, co
 
 		Rect roi{ 0,0,3,3 };
 
-		Mat virtualProj2CamMat = Mat(virtualProj2Cam).clone();
+		Mat virtualProj2CamMat = Mat(virtualProj2Cam);
 		virtualProj2CamMat(roi) = virtualProj2CamMat(roi) * scalingMatrix;
 
 		virtualProj2Cam = Matx44d(virtualProj2CamMat);
@@ -207,8 +207,6 @@ void ProcamCalibrator::init()
 	paramsFrame.minCircularity = 0.5;
 
 	circlesDetector = SimpleBlobDetector::create(paramsFrame);
-	
-	std::cout << "OpenCV version: " << CV_VERSION << std::endl;
 }
 
 void ProcamCalibrator::calibrate(bool debug)
